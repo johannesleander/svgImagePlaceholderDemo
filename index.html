@@ -17,8 +17,7 @@
     width: 100%;
   }
 
-  .container img,
-  .container svg {
+  .container img {
     position: absolute;
     top: 0;
     left: 0;
@@ -26,12 +25,12 @@
     height: 100%;
   }
 
-  .container svg {
+  .container .svg {
     opacity: 1;
     transition: opacity 1s linear;
   }
 
-  .container.show svg {
+  .container.show .svg {
     opacity: 0;
   }
   </style>
@@ -40,8 +39,16 @@
 </head>
 <body>
   <div class="container">
-    <img src="4k-Canyon.png">
-    <svg viewBox="0 0 128 72" width="512" height="288"><rect x="0" y="0" width="128" height="72" fill="rgb(59, 30, 21)"/><path d="M21,14L41,82L107,48Z" fill="rgb(198, 152, 84)" fill-opacity="0.63"/><path d="M16,14L113,54L105,9Z" fill="rgb(69, 86, 92)" fill-opacity="0.63"/><path d="M12,40L45,16L27,58Z" fill="rgb(195, 106, 61)" fill-opacity="0.52"/><path d="M122,31L95,11L102,35Z" fill="rgb(250, 188, 122)" fill-opacity="0.42"/><path d="M59,41L19,37L39,27Z" fill="rgb(255, 166, 38)" fill-opacity="0.61"/><path d="M21,57L73,166L92,76Z" fill="rgb(79, 44, 30)" fill-opacity="0.94"/><path d="M85,15L110,26L90,10Z" fill="rgb(203, 157, 101)" fill-opacity="0.67"/><path d="M84,14L113,40L43,17Z" fill="rgb(0, 45, 74)" fill-opacity="0.66"/><path d="M44,49L34,38L30,54Z" fill="rgb(50, 24, 35)" fill-opacity="0.57"/><path d="M21,55L86,63L89,44Z" fill="rgb(218, 186, 97)" fill-opacity="0.39"/><path d="M62,3L18,-8L14,44Z" fill="rgb(112, 53, 28)" fill-opacity="0.50"/></svg>
+    <img class="png" src="4k-Canyon.png">
+    <img class="svg" src="canyon10.svg" >
+  </div>
+  <div class="container">
+    <img class="png" src="4k-Canyon.png">
+    <img class="svg" src="canyon100.svg" >
+  </div>
+  <div class="container">
+    <img class="png" src="4k-Canyon.png">
+    <img class="svg" src="canyon500.svg" >
   </div>
 </body>
 <script type="text/javascript">
