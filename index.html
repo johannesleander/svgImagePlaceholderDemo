@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>SVG Placeholder Demo</title>
 
   <style>
   body {
@@ -38,24 +38,28 @@
 
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="1">
     <img class="png" src="4k-Canyon.png">
     <img class="svg" src="canyon10.svg" >
   </div>
-  <div class="container">
+  <div class="container" id="2">
     <img class="png" src="4k-Canyon.png">
     <img class="svg" src="canyon100.svg" >
   </div>
-  <div class="container">
+  <div class="container" id="3">
     <img class="png" src="4k-Canyon.png">
     <img class="svg" src="canyon500.svg" >
   </div>
 </body>
 <script type="text/javascript">
   window.onload = () => {
-  const container = document.querySelector('.container');
+  const container1 = document.getElementById('1');
+  const container2 = document.getElementById('2');
+  const container3 = document.getElementById('3');
   setInterval(() => {
-    container.classList.toggle('show');
+    container1.classList.toggle('show');
+    container2.classList.toggle('show');
+    container3.classList.toggle('show');
   }, 4000);
   };
 </script>
